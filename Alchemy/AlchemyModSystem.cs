@@ -22,6 +22,7 @@ public class AlchemyModSystem : ModSystem
 
     public override void StartClientSide(ICoreClientAPI api)
     {
+        api.SendChatMessage("i'm watching you boy...");
         Mod.Logger.Notification("Hello from template mod client side: " + Lang.Get("alchemy:hello"));
     }
 
