@@ -12,8 +12,11 @@ public class AlchemyModSystem : ModSystem
     // Useful for registering block/entity classes on both sides
     public override void Start(ICoreAPI api)
     {
+        api.RegisterBlockClass(Mod.Info.ModID + "alchemy.fucking_yams", typeof(FuckingYams));
         Mod.Logger.Notification("Hello from template mod: " + api.Side);
     }
+
+    //"class": "alchemy.fucking_yams",
 
     public override void StartServerSide(ICoreServerAPI api)
     {
